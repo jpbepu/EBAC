@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+body{
+    background-color: rgb(61, 61, 61);
+}
+
 .container{
     display: flex;
     align-items: center;
@@ -12,21 +16,16 @@
     height: 100vh;
 }
 
-.lista{
 
-
-
-}
 
 form{
     padding: 20px;
     background-color: bisque;
     border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
-ul:last-child{
-    border-bottom-right-radius: 20px;
-}
+
 
 button{
     padding: 5px 10px;
@@ -42,9 +41,17 @@ button{
 }
 
 ul li{
-    background-color: bisque;
+    background-color: rgb(255, 175, 78);
     padding: 20px;
     list-style: none;
+    font-weight: bold;
+    
+
+}
+
+li:last-child{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .completo{
