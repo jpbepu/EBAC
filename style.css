@@ -1,0 +1,27 @@
+
+
+.navbar{
+    background-color: orange;
+}
+
+
+.nav-link,
+.navbar-brand,
+.navbar-brand:hover{
+
+    color: white;
+}
+
+.nav .nav-item .active{
+    background-color: white;
+    color: orange;
+}
+
+.navbar-toggler{
+    background-color: white;
+    border-color: aliceblue;
+}
+
+ol {
+    list-style-type: none;
+  }
