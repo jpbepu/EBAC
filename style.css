@@ -17,10 +17,10 @@
     color: orange;
 }
 
-.navbar-toggler{
-    background-color: white;
-    border-color: aliceblue;
+.navbar-toggler-icon{
+    border-color: white;
 }
+
 
 ol {
     list-style-type: none;
