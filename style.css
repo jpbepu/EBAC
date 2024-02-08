@@ -17,6 +17,10 @@
     color: orange;
 }
 
+.nav .nav-item:hover{
+    color: white;
+}
+
 .navbar-toggler-icon{
     border-color: white;
 }
