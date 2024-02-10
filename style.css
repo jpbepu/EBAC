@@ -1,7 +1,7 @@
 
 
-.navbar{
-    background-color: orange;
+header.navbar{
+    background-color: orangered;
 }
 
 
@@ -12,20 +12,50 @@
     color: white;
 }
 
-.nav .nav-item .active{
+header .nav .nav-item .active{
     background-color: white;
-    color: orange;
+    color: orangered;
 }
 
-.nav .nav-item:hover{
+header .nav-link:hover{
     color: white;
 }
 
-.navbar-toggler-icon{
-    border-color: white;
+.nav-cardapio .nav-link{
+    color: orangered;
 }
 
 
-ol {
-    list-style-type: none;
-  }
+.nav-cardapio .nav-link.active {
+    background-color: orangered;
+}
+
+.text-colored{
+    color: orangered;
+}
+
+.display{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.orangebg {
+    background-color: rgba(255, 203, 144, 0.397);
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+.btn-form{
+    background-color: orangered;
+    color: white;
+}
+
+.bi-instagram{
+    margin: 0 5px;
+}
