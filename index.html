@@ -7,13 +7,183 @@
         <title>Site Bootstrap</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
         <link rel="stylesheet" href="./style.css">
     </head>
-    <body>
 
-        
+    <body data-bs-spy="scroll">
+
+        <header class="navbar navbar-expand-lg sticky-top ">
+            <div class="container fw-bold">
+                    <a class="navbar-brand m-0 fs-1 text-light"><i class="bi bi-flower3"></i>Organicos</a>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="navbar-collapse collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav d-md-flex">
+                            <li class="nav-item">
+                                <a href="#sobre" class="nav-link fs-5">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#produtos" class="nav-link fs-5">Produtos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contato" class="nav-link fs-5">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+            </div>
+        </header>
+
+
+        <!-- carousel  -->
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img
+                        src="https://dummyimage.com/1280x720.jpg"
+                        class="w-100 d-block"
+                        alt="First slide"
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="https://dummyimage.com/1280x720.jpg"
+                        class="w-100 d-block"
+                        alt="Second slide"
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="https://dummyimage.com/1280x720.jpg"
+                        class="w-100 d-block"
+                        alt="Third slide"
+                    />
+                </div>
+            </div>
+
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselId"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselId"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <div class="carousel-indicators">
+                <button data-bs-target="#carouselId" data-bs-slide-to="0" class="active">
+                <button data-bs-target="#carouselId" data-bs-slide-to="1">
+                <button data-bs-target="#carouselId" data-bs-slide-to="2">
+            </div>
+        </div>
+
+        <section id="sobre">
+            <div class="container">
+                <div class="row text-center pt-5">
+                    <h2>Sobre Nos</h2>
+                </div>
+                <div class="row
+                            row-cols-1
+                            row-cols-sm-3
+                            d-flex
+                            justify-content-center
+                            py-5
+                            px-5">
+
+                    <div class="col text-center">
+                        <i class="bi bi-tree i-sobre"></i>
+                        <p>A qualidade de nossos produtos é importante para nós, por isso temos uma equipe dedicada à realizar testes antes da venda.</p>    
+                    </div>
+                    <div class="col text-center">
+                        <i class="bi bi-cash i-sobre"></i>
+                        <p>Oferecemos a nossa garantia de que o seu produto será do seu agrado, se não gostar, pode pedir o seu dinheiro de volta.</p>    
+                    </div>
+                        <div class="col text-center">
+                        <i class="bi bi-patch-check i-sobre"></i>
+                        <p>Todos os nossos produtos são vendidos com a sua consciência dos produtos utlizados na fabricação</p>    
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="produtos">
+            <div class="container">
+                <div class="row text-center pt-5">
+                    <h2 class="text-light">Produtos</h2>
+                </div>
+                <div class="row
+                            row-cols-1
+                            row-cols-md-2
+                            row-cols-lg-4
+                            py-5
+                            g-4
+                            ">
+
+                    <div class="col">
+                        <div class="card shadow">
+                            <img class="card-img-top" src="http://loremflickr.com/320/400/food" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Produto X</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta id neque expedita.</p>
+                                <button class="btn float-end">Saiba mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow">
+                            <img class="card-img-top" src="http://loremflickr.com/320/400/food" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Produto X</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta id neque expedita.</p>
+                                <button class="btn float-end">Saiba mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow">
+                            <img class="card-img-top" src="http://loremflickr.com/320/400/food" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Produto X</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta id neque expedita.</p>
+                                <button class="btn float-end">Saiba mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow">
+                            <img class="card-img-top" src="http://loremflickr.com/320/400/food" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Produto X</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta id neque expedita.</p>
+                                <button class="btn float-end">Saiba mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" async defer></script>
     </body>

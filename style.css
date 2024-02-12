@@ -1,0 +1,47 @@
+
+
+.carousel-indicators {
+    list-style:none ;
+}
+
+.nav-link{
+    color: white;
+}
+
+.navbar-nav .nav-link.active{
+    color: rgb(188, 238, 175);
+    text-decoration: underline solid rgb(188, 238, 175) 3px;
+    text-underline-offset: 8px;
+}
+
+
+header{
+    background: rgb(201,217,78);
+    background: linear-gradient(158deg, rgba(201,217,78,1) 0%, rgba(38,166,83,1) 100%);
+    box-shadow: 0px 0px 30px;
+}
+
+.i-sobre {
+    font-size: 48px;
+    color: rgb(194, 57, 57);
+}
+
+.card{
+    transition: 300ms;
+}
+
+.card:hover{
+
+    transform: scale(1.02);
+}
+
+.card .card-body .btn{
+    color: white;
+    border: none;
+    background: linear-gradient(158deg, rgba(201,217,78,1) 0%, rgba(38,166,83,1) 100%);
+}
+
+#produtos{
+    background: linear-gradient(158deg, rgba(201,217,78,1) 0%, rgba(38,166,83,1) 100%);
+
+}
