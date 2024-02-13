@@ -1,62 +1,85 @@
 
-
-header.navbar{
-    background-color: orangered;
+.carousel-indicators {
+    list-style:none ;
 }
 
-
-.nav-link,
-.navbar-brand,
-.navbar-brand:hover{
-
+.nav-link{
     color: white;
 }
 
-header .nav .nav-item .active{
-    background-color: white;
-    color: orangered;
+.navbar-nav .nav-link.active{
+    color: rgb(188, 238, 175);
+    text-decoration: underline solid rgb(188, 238, 175) 3px;
+    text-underline-offset: 8px;
 }
 
-header .nav-link:hover{
+
+header{
+    background: rgb(201,217,78);
+    background: linear-gradient(158deg, rgba(201,217,78,1) 0%, rgba(38,166,83,1) 100%);
+
+}
+
+.icone {
+    font-size: 48px;
+    color: rgb(194, 57, 57);
+}
+
+.icone-card {
+    font-size: 80px;
     color: white;
 }
 
-.nav-cardapio .nav-link{
-    color: orangered;
+.card{
+    transition: 300ms;
+    border: none;
+}
+
+.card-mais{
+    transition: 300ms;
+    border: solid white 2px;
+    cursor: pointer;
+}
+
+.card:hover{
+
+    transform: scale(1.02);
+}
+
+.card .card-body .btn{
+    color: white;
+    border: none;
+    background: linear-gradient(158deg, rgba(201,217,78,1) 0%, rgba(38,166,83,1) 100%);
+}
+
+.gradient-bg{
+    background: linear-gradient(158deg, rgba(201,217,78,1) 0%, rgba(38,166,83,1) 100%);
+
 }
 
 
-.nav-cardapio .nav-link.active {
-    background-color: orangered;
-}
-
-.text-colored{
-    color: orangered;
+form div{
+    margin: 16px 0;
 }
 
 .display{
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.orangebg {
-    background-color: rgba(255, 203, 144, 0.397);
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
-.social-links li{
-    list-style: none;
-    display: inline;
+.subtitulo{
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(194, 57, 57);
 }
-
-.social-links a{
-    text-decoration: none;
-}
-
-.btn-form{
-    background-color: orangered;
-    color: white;
-}
-
-.bi-instagram{
-    margin: 0 5px;
-}
-
