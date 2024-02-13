@@ -1,5 +1,4 @@
 
-
 .carousel-indicators {
     list-style:none ;
 }
@@ -18,16 +17,28 @@
 header{
     background: rgb(201,217,78);
     background: linear-gradient(158deg, rgba(201,217,78,1) 0%, rgba(38,166,83,1) 100%);
-    box-shadow: 0px 0px 30px;
+
 }
 
-.i-sobre {
+.icone {
     font-size: 48px;
     color: rgb(194, 57, 57);
 }
 
+.icone-card {
+    font-size: 80px;
+    color: white;
+}
+
 .card{
     transition: 300ms;
+    border: none;
+}
+
+.card-mais{
+    transition: 300ms;
+    border: solid white 2px;
+    cursor: pointer;
 }
 
 .card:hover{
@@ -41,7 +52,34 @@ header{
     background: linear-gradient(158deg, rgba(201,217,78,1) 0%, rgba(38,166,83,1) 100%);
 }
 
-#produtos{
+.gradient-bg{
     background: linear-gradient(158deg, rgba(201,217,78,1) 0%, rgba(38,166,83,1) 100%);
 
+}
+
+
+form div{
+    margin: 16px 0;
+}
+
+.display{
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.subtitulo{
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(194, 57, 57);
 }
