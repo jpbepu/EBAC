@@ -5,8 +5,14 @@
   "main": "index.js",
   "scripts": {
     "gulp": "gulp",
+<<<<<<< HEAD
     "watch": "gulp watch",
     "compress imgs" : "gulp imagemin",
+=======
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "compress imgs": "gulp imgmin",
+>>>>>>> 2e2d2a720da91b1db542a027e93c21d887352a95
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +20,10 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2",
+<<<<<<< HEAD
+=======
+    "gulp-clean": "^0.4.0",
+>>>>>>> 2e2d2a720da91b1db542a027e93c21d887352a95
     "gulp-imagemin": "^7.1.0",
     "gulp-less": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",

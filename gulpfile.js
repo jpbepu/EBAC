@@ -1,31 +1,28 @@
-const { src, dest, series, watch} = require('gulp');
+const {src, dest, watch, parallel} = require('gulp');
+const imgmin = require('gulp-imagemin');
 const less = require('gulp-less');
-const sourcemaps = require('gulp-sourcemaps');
-const imagemin = require('gulp-imagemin');
+const clean = require('gulp-clean');
 
 
-
-
-function lessComp() {
-    return src('./src/**/*.less')
-        .pipe(sourcemaps.init())
+function lessComp(){
+    return src('./src/**/main.less')
         .pipe(less())
-        .pipe(sourcemaps.write())
-        .pipe(dest('./build'));
-};
+        .pipe( dest('./build'))
+}
 
-function imageMin() {
-    return src('./src/img/**/*')
-        .pipe(imagemin())
-        .pipe(dest('./build/img'));
-};
+function imageMin(){
+    return src('./src/img/*')
+        .pipe(imgmin())
+        .pipe( dest('./build/img'))
+}
 
+function cleanBuild(){
+    return src('./build')
+        .pipe(clean())
+}
 
-
-
-
-exports.default = series(lessComp);
-exports.imagemin = imageMin;
-exports.watch = ()=>{
-  watch('./src/*.less', {ignoreInitial:false}, lessComp);
-};
+exports.default = cleanBuild;
+exports.imgmin = imageMin;
+exports.watch = function(){
+    watch('./src/**/*.less' , lessComp)
+}
