@@ -11,7 +11,7 @@ function lessComp(){
         .pipe(sourcemaps.init())
         .pipe(less())
         .pipe(sourcemaps.write())
-        .pipe( dest('./build'))
+        .pipe( dest('./build/style'))
 }
 
 function imageMin(){
