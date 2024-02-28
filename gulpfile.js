@@ -30,7 +30,8 @@ function copyHTML(){
         .pipe(dest('./build'))
 }
 
-exports.default = series( cleanBuild, imageMin, lessComp, copyHTML);
+exports.default = lessComp
+exports.build = series( cleanBuild, imageMin, lessComp, copyHTML);
 exports.imgmin = imageMin;
 exports.watch = function(){
     watch('./src/**/*.less' , lessComp)
