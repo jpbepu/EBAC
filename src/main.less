@@ -1,0 +1,185 @@
+
+
+//variaveis
+
+@bg: rgb(31, 29, 27);
+
+
+//mixins
+
+.text-font{
+    font-size: 20px;
+    font-family: "Sen", sans-serif;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+.title-font{
+    font-size: 30px;
+    font-family: "Sen", sans-serif;
+    font-weight: 700;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+//---------------------------------------
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: @bg;
+    color: aliceblue;
+    .text-font();
+}
+
+.nav{
+
+
+    width: 100%;
+    margin-top:8px;
+
+    .flex-center();
+
+    .title-font();
+
+    &__list{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        width: 400px;
+
+        .nav__item{
+
+            list-style: none;
+            padding: 8px;
+            border: solid 2px aliceblue;
+            border-radius: 16px;
+
+            transition: 200ms;
+
+            .nav__link{
+
+                text-decoration: none;
+                color: aliceblue;
+            }
+
+
+            &:hover{
+                transform: translateY(-10px);
+            }
+
+
+        }
+    }
+}
+
+.hero{
+
+    background-image: url('./img/peakpx.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.589);
+
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container{
+
+
+
+
+        &__brand{
+
+            max-width: 80vw;
+
+        }
+    }
+}
+
+
+.container{
+
+    padding: 5vw;
+    text-align: center;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.589) inset;
+
+    &__title{
+
+        .title-font();
+    }
+}
+
+
+.card-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.card{
+
+    width: 20%;
+    transition: 200ms;
+    text-align: center;
+
+    .flex-center();
+    flex-direction: column;
+
+    &__img{
+        border-radius: 16px;
+    }
+
+    &__text{
+
+        line-height: 1em;
+        margin-top: 8px;
+    }
+
+    &:hover{
+        transform: translateY(-10px);
+    }
+
+}
+
+.box-shadow{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+@media screen and (max-width:1023px) {
+
+    .hero__container__brand img{
+
+        width: 100%;
+    }
+
+    .card-wrapper{
+
+        flex-direction: column;
+
+        .card{
+            margin-bottom: 24px;
+        }
+    
+    }
+
+}

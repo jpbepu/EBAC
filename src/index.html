@@ -7,38 +7,101 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../build/style.css">
+        <link rel="stylesheet" href="../build/main.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+
+
     </head>
     <body>
 
-        <header>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">Sobre</li>
-                    <li class="nav__item">Onde Assistir</li>
-                </ul>
-            </nav>
-        </header>
-
         <section class="hero">
+            <div class="hero__container">
+                <div class="hero__container__brand">
+                    <img src="./img/Dune_2021_transparent_logo.png" alt="">
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#sobre" class="nav__link">Sobre</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#onde-assistir" class="nav__link">Onde Assistir</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="sobre">
+
+            <div class="container">
+                <h2 class="container__title">Sobre o filme</h2>
+                <br>
+                <p>Em um futuro épico distante da humanidade, o duque Leto Atreides se prepara para conquistar e assumir o comando do planeta composto por desertos de nome Arrakis, também conhecido como Duna, tendo como principal missão dominar a substância Melange, capaz de prolongar a vida e acelerar os níveis de pensamento dos seres humanos.
+                    <br>
+                    <br>
+                    Levando consigo seus conselheiros mais leais, seu filho Paul e a concubina Lady Jessica, o duque Leto é traído de maneira inesperada e se vê obrigado a mandar Paul e Jessica ao encontro dos Fremen, um antigo povo nativo de Arrakis que reside no deserto do planeta, habitado por vermes da areia gigante extremamente perigosos.
+                </p>
+        
+            </div>
+
+
+            <div class="container">
+
+                    <h2 class="container__title">Elenco</h2>
+                    <br>
+
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="./img/thimothee.png" alt="" class="card__img box-shadow">
+                            <h4 class="card__text">Timothée Chalamet</h4>
+                        </div>
+                        <div class="card">
+                            <img src="./img/zendaya.png" alt="" class="card__img box-shadow">
+                            <h4 class="card__text">Zendaya</h4>
+                        </div>
+                        <div class="card">
+                            <img src="./img/rebbeca.png" alt="" class="card__img box-shadow">
+                            <h4 class="card__text">Rebecca Ferguson</h4>
+                        </div>
+                        <div class="card">
+                            <img src="./img/oscar.png" alt="" class="card__img box-shadow">
+                            <h4 class="card__text">Oscar Isaac</h4>
+                        </div>
+                    </div>
+            </div>
 
         </section>
 
-        <div class="container">
-            <ul>
-                <li class="dropdown">
-                    <p class="dropdown__title">Dropdown</p>
-                    <div class="dropdown__content">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias dolorem quo quasi itaque ducimus 
-                            molestias enim! Autem praesentium ipsum, alias ratione cupiditate perspiciatis sit molestias nam 
-                            voluptatem hic quod reiciendis?
-                        </p>
+        <section id="onde-assistir">
 
+            <div class="container">
+
+                <h2 class="container__title">Onde Assistir</h2>
+                <br>
+
+                <div class="card-wrapper">
+                    <div class="card">
+                        <a href="#">
+                            <img src="./img/nettflix.png" alt="" class="card__img">
+                        </a>
                     </div>
-                </li>
-            </ul>
-        </div>
+
+
+                    <div class="card">
+                        <a href="#">
+                            <img src="./img/prime.png" alt="" class="card__img">
+                        </a>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
 
         
         <script src="../src/script.js" async defer></script>

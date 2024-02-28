@@ -1,12 +1,16 @@
-const {src, dest, watch, parallel} = require('gulp');
+const {src, dest, watch, series} = require('gulp');
 const imgmin = require('gulp-imagemin');
 const less = require('gulp-less');
+const sourcemaps = require('gulp-sourcemaps');
 const clean = require('gulp-clean');
+const copy = require('gulp-copy');
 
 
 function lessComp(){
     return src('./src/**/main.less')
+        .pipe(sourcemaps.init())
         .pipe(less())
+        .pipe(sourcemaps.write())
         .pipe( dest('./build'))
 }
 
@@ -21,7 +25,12 @@ function cleanBuild(){
         .pipe(clean())
 }
 
-exports.default = cleanBuild;
+function copyHTML(){
+    return src('./src/index.html')
+        .pipe(dest('./build'))
+}
+
+exports.default = series( cleanBuild, imageMin, lessComp, copyHTML);
 exports.imgmin = imageMin;
 exports.watch = function(){
     watch('./src/**/*.less' , lessComp)
