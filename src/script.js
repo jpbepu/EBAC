@@ -9,7 +9,6 @@ const tFactor = {
 }
 
 
-
 const counter = setInterval(()=>{
 
     //data do evento
@@ -39,6 +38,15 @@ const counter = setInterval(()=>{
 },1000)
 
 
+const faqItemList = document.querySelectorAll('.faq__item');
+
+
+for (let i = 0; i < faqItemList.length; i++) {
+
+    faqItemList[i].addEventListener('click', function(){
+        faqItemList[i].classList.toggle("--is-active");
+    });
+}
 
 
 
@@ -46,16 +54,14 @@ const counter = setInterval(()=>{
 
 
 
-// divisores de tempo em ms
 
 
 
+// const faqItem = document.querySelector('.faq__item');
 
-
-
-
-
-
+// faqItem.addEventListener('click', function(){
+//     faqItem.classList.toggle("--is-active");
+// });
 
 
 
