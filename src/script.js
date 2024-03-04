@@ -1,4 +1,7 @@
 
+//--------------------------Contador----------------------------
+
+
 //divisoes para o getTime() em ms
 const tFactor = {
     s: 1000,
@@ -12,7 +15,7 @@ const tFactor = {
 const counter = setInterval(()=>{
 
     //data do evento
-    const bday = new Date('dec 1, 2024 00:00:00').getTime();
+    const bday = new Date('dec 2, 2024 00:00:00').getTime();
 
     //data de agora
     const now = new Date().getTime();
@@ -28,7 +31,7 @@ const counter = setInterval(()=>{
     var dSec = Math.floor((intervalo % tFactor.m) /tFactor.s);
 
     //injecao do contador no HTML
-    document.querySelector('#counter').innerHTML = (`${dMonth}M, ${dDay}d, ${dHr}hrs, ${dMin}min, ${dSec}s !`);
+    document.querySelector('#counter').innerHTML = (`${dMonth} meses, ${dDay} dias, ${dHr}hrs, ${dMin}min, e ${dSec}s!`);
 
     //teste para ver se o evento ja passou
     if (intervalo < 0){
@@ -37,6 +40,9 @@ const counter = setInterval(()=>{
 
 },1000)
 
+
+
+//--------------------------FAQ---------------------------------
 
 const faqItemList = document.querySelectorAll('.faq__item');
 
@@ -47,23 +53,6 @@ for (let i = 0; i < faqItemList.length; i++) {
         faqItemList[i].classList.toggle("--is-active");
     });
 }
-
-
-
-
-
-
-
-
-
-
-// const faqItem = document.querySelector('.faq__item');
-
-// faqItem.addEventListener('click', function(){
-//     faqItem.classList.toggle("--is-active");
-// });
-
-
 
 
 
