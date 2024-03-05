@@ -1,0 +1,176 @@
+
+$bgColor: #c75233;
+
+$mainColor: #c78933;
+$mainColorLight:#d6ceaa;
+
+$secondaryColor:#79b5ac;
+$secondaryColorLight:#5e2f46;
+
+@mixin noto-regular{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin noto-bold{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    background-color: $bgColor;
+    color: white;
+    @include noto-regular;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.hero{
+
+    background-image: url('https://img.freepik.com/premium-photo/close-up-hands-holding-plate-with-cake_23-2149212165.jpg?w=1380');
+    background-size: cover;
+    width: 100%;
+    min-height: 80vh;
+    margin:0;
+
+    &__title{
+
+        text-align: center;
+        h1{
+            background-color: $bgColor;
+            padding: 16px;
+            font-size: 2em;
+            margin:0;
+        }
+
+        h2{
+            background-color: $mainColor;
+            padding: 16px 16px 8px 16px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            color: $mainColorLight;
+            span{
+                color: white;
+            }
+        }
+
+        h3{
+            background-color: $mainColor;
+            color: $mainColorLight;
+            padding: 16px 8px 16px 16px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+    }
+
+
+}
+
+#faq{
+
+    width: 100%;
+
+    .faq__item{
+
+        list-style: none;
+        margin-bottom: 16px;
+        cursor: pointer;
+
+        &__question{
+
+            color: white;
+
+            background-color: $secondaryColor;
+            padding: 16px;
+            border-radius: 4px;
+            border-bottom:solid 3px $bgColor;
+
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & span{
+                font-weight: 700;
+                
+            }
+
+        }
+
+        &__answer{
+            background-color: $secondaryColorLight;
+            padding: 0 16px;
+            border-radius: 4px;
+
+            height: 0;
+            overflow: hidden;
+
+            transition: 200ms;
+
+            & span{
+                font-weight: 700;
+                margin-right: 8px;
+            }
+
+
+        }
+        
+
+    }
+
+    .--is-active{
+            
+        .faq__item__answer{
+            height: auto;
+            padding: 16px;
+        }
+
+    }
+
+}
+
+
+.container{
+
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    ul{
+        padding: 0;
+    }
+
+
+}
+
+.title{
+    margin: 16px 0;
+}
+
+
+
