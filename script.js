@@ -14,8 +14,24 @@ function Rabbit(name, color) {
     Animal.call(this, name);
 }
 
-const fred = new Rabbit('Fred', 'grey');
-const leelo = new Rabbit('Leelo', 'black');
-const rick = new Rabbit('Rick','brown')
+function Dog(name, color) {
 
-console.log(`${fred.name}'s color is ${fred.color}, ${leelo.name}'s color is ${leelo.color}, and ${rick.name}'s color is ${rick.color}`);
+    this.color = color;
+
+    Animal.call(this, name);
+}
+
+function Cat(name, color) {
+
+    this.color = color;
+
+    Animal.call(this, name);
+}
+
+
+const rabbit = new Rabbit('Fred', 'white');
+const dog = new Dog('Liz', 'brown');
+const cat = new Cat('Maou', 'black');
+
+
+console.log(`${rabbit.name}, ${dog.name}, ${cat.name}`)
