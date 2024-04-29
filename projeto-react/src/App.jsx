@@ -21,28 +21,28 @@ function App() {
     console.log(grau)
 
 
-  }, [peso, altura])
+  }, [peso, altura, imc])
 
   function calcIMC(){
     setImc((peso*10000)/(altura * altura))
 
-    if ( imc < 18,5 ){
+    if ( imc < 18.5 ){
       setGrau('abaixo do peso')
     }
     
-    if (imc > 18,5) {
+    if (imc >= 18.5 && imc < 25) {
       setGrau('com o peso normal')
     }
     
-    if (imc > 25){
+    if (imc >= 25 && imc < 30){
       setGrau('com excesso de peso')
     }
     
-    if (imc > 30) {
+    if (imc >= 30 && imc < 35) {
       setGrau('com Obesidade classe I')
     }
     
-    if (imc > 35) {
+    if (imc >= 35 && imc < 40) {
       setGrau('com Obesidade classe II')
     }
     
@@ -77,3 +77,30 @@ function App() {
 }
 
 export default App
+
+
+    // switch (imc) {
+    //   case imc < 18,5:
+    //     setGrau('abaixo do peso')
+    //     break;
+    
+    //   case imc > 18,5:
+    //     setGrau('com o peso normal')
+    //     break;
+
+    //   case imc > 25:
+    //     setGrau('com excesso de peso')
+    //     break;        
+
+    //   case imc > 30:
+    //     setGrau('com Obesidade classe I')
+    //     break; 
+
+    //   case imc > 35:
+    //     setGrau('com Obesidade classe II')
+    //     break; 
+
+    //   case imc >= 40:
+    //     setGrau('com Obesidade classe III')
+    //     break; 
+    // }
